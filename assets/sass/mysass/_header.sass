@@ -1,9 +1,54 @@
+@mixin headerItem
+  background-color: #4d97c1
+  border-radius: 5px
+  border: none
+
 header
+  @include position(fixed, 0, 0, null, 0)
   height: 30px
   padding: 5px
   background-color: #026AA7
-  position: relative
+  color: white
+  .logo-buf
+    @include eqsize(28px)
+    float: left
+    padding: 1px 10px 1px 5px
+  .search-box
+    @include size(130px, 28px)
+    @include headerItem()
+    float: left
+    padding: 1px 5px
+    transition: width 0.2s ease-in-out
+    &:focus
+      background: white
+      width: 185px
+  .search-but
+    @include eqsize(20px)
+    float: left
+    padding: 5px 0 5px 10px
   .logo
-    @include size(auto, 24px)
-    @include position(absolute, 50%, 0, 0, 50%)
-    transform: translate(-50%, -50%)
+    @include size(auto, 20px)
+    @include completeCenter()
+  .rightBut
+    @include size(auto, 30px)
+    @include headerItem()
+    float: right
+    margin-left: 10px
+    &:hover
+      background-color: #62a2c8
+    img
+      float: left
+      @include eqsize(14px)
+      padding: 8px
+    p
+      float: left
+      padding: 0 8px 0 0
+      text-align: center
+      margin: 0
+      line-height: 30px
+
+.container
+  max-width: 940px
+  height: 1500px
+  background-color: pink
+  margin: 50px auto auto auto

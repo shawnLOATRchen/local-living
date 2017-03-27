@@ -19,3 +19,15 @@
   background: url($url) $posH $posV
   background-size: $size
   background-repeat: $repeat
+
+@mixin horizontalCenter()
+  @include position(absolute, null, null, null, 50%)
+  transform: translateX(-50%)
+
+@mixin verticalalCenter()
+  @include position(absolute, 50%, null, null, null)
+  transform: translateY(-50%)
+
+@mixin completeCenter()
+  @include position(absolute, 50%, null, null, 50%)
+  transform: translate(-50%, -50%)

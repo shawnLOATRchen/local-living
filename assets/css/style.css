@@ -16,13 +16,17 @@ a {
   text-decoration: none;
   outline: 0;
 }
+/* line 15, ../sass/_base.sass */
+a:visited {
+  color: inherit;
+}
 
-/* line 16, ../sass/_base.sass */
+/* line 18, ../sass/_base.sass */
 img {
   width: 100%;
 }
 
-/* line 19, ../sass/_base.sass */
+/* line 21, ../sass/_base.sass */
 h3 {
   text-align: center;
   color: #e1c184;
@@ -30,26 +34,95 @@ h3 {
   margin: 10px auto;
 }
 
-/* line 25, ../sass/_base.sass */
+/* line 27, ../sass/_base.sass */
 .alt-section {
   background-color: rgba(250, 250, 250, 0.9);
 }
 
-/* line 1, ../sass/mysass/_header.sass */
+/* line 6, ../sass/mysass/_header.sass */
 header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 30px;
   padding: 5px;
   background-color: #026AA7;
-  position: relative;
+  color: white;
 }
-/* line 6, ../sass/mysass/_header.sass */
+/* line 12, ../sass/mysass/_header.sass */
+header .logo-buf {
+  width: 28px;
+  height: 28px;
+  float: left;
+  padding: 1px 10px 1px 5px;
+}
+/* line 16, ../sass/mysass/_header.sass */
+header .search-box {
+  width: 130px;
+  height: 28px;
+  background-color: #4d97c1;
+  border-radius: 5px;
+  border: none;
+  float: left;
+  padding: 1px 5px;
+  transition: width 0.2s ease-in-out;
+}
+/* line 22, ../sass/mysass/_header.sass */
+header .search-box:focus {
+  background: white;
+  width: 185px;
+}
+/* line 25, ../sass/mysass/_header.sass */
+header .search-but {
+  width: 20px;
+  height: 20px;
+  float: left;
+  padding: 5px 0 5px 10px;
+}
+/* line 29, ../sass/mysass/_header.sass */
 header .logo {
   width: auto;
-  height: 24px;
+  height: 20px;
   position: absolute;
   top: 50%;
-  right: 0;
-  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/* line 32, ../sass/mysass/_header.sass */
+header .rightBut {
+  width: auto;
+  height: 30px;
+  background-color: #4d97c1;
+  border-radius: 5px;
+  border: none;
+  float: right;
+  margin-left: 10px;
+}
+/* line 37, ../sass/mysass/_header.sass */
+header .rightBut:hover {
+  background-color: #62a2c8;
+}
+/* line 39, ../sass/mysass/_header.sass */
+header .rightBut img {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding: 8px;
+}
+/* line 43, ../sass/mysass/_header.sass */
+header .rightBut p {
+  float: left;
+  padding: 0 8px 0 0;
+  text-align: center;
+  margin: 0;
+  line-height: 30px;
+}
+
+/* line 50, ../sass/mysass/_header.sass */
+.container {
+  max-width: 940px;
+  height: 1500px;
+  background-color: pink;
+  margin: 50px auto auto auto;
 }
