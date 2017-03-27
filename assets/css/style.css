@@ -38,24 +38,25 @@ header {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
   height: 30px;
   padding: 5px;
   background-color: #026AA7;
   color: white;
 }
-/* line 12, ../sass/mysass/_header.sass */
+/* line 13, ../sass/mysass/_header.sass */
 header .header-box {
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 15, ../sass/mysass/_header.sass */
+/* line 16, ../sass/mysass/_header.sass */
 header .header-box .logo-buf {
   width: 28px;
   height: 28px;
   float: left;
   padding: 1px 10px 1px 5px;
 }
-/* line 19, ../sass/mysass/_header.sass */
+/* line 20, ../sass/mysass/_header.sass */
 header .header-box .search-box {
   width: 130px;
   height: 28px;
@@ -66,27 +67,27 @@ header .header-box .search-box {
   padding: 1px 5px;
   transition: width 0.2s ease-in-out;
 }
-/* line 25, ../sass/mysass/_header.sass */
+/* line 26, ../sass/mysass/_header.sass */
 header .header-box .search-box::-webkit-input-placeholder {
   color: white;
 }
-/* line 27, ../sass/mysass/_header.sass */
+/* line 28, ../sass/mysass/_header.sass */
 header .header-box .search-box:hover {
   background-color: #62a2c8;
 }
-/* line 29, ../sass/mysass/_header.sass */
+/* line 30, ../sass/mysass/_header.sass */
 header .header-box .search-box:focus {
   background: white;
   width: 185px;
 }
-/* line 32, ../sass/mysass/_header.sass */
+/* line 33, ../sass/mysass/_header.sass */
 header .header-box .search-but {
   width: 18px;
   height: 18px;
   float: left;
   padding: 6px 0 6px 10px;
 }
-/* line 36, ../sass/mysass/_header.sass */
+/* line 37, ../sass/mysass/_header.sass */
 header .header-box .logo {
   width: auto;
   height: 20px;
@@ -95,29 +96,37 @@ header .header-box .logo {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 39, ../sass/mysass/_header.sass */
-header .header-box .rightBut {
+/* line 40, ../sass/mysass/_header.sass */
+header .header-box .toggle {
+  height: 0;
+}
+/* line 42, ../sass/mysass/_header.sass */
+header .header-box nav {
+  float: right;
+}
+/* line 44, ../sass/mysass/_header.sass */
+header .header-box nav .rightBut {
   width: auto;
   height: 30px;
   background-color: #4d97c1;
   border-radius: 5px;
   border: none;
-  float: right;
+  display: inline-block;
   margin-left: 10px;
 }
-/* line 44, ../sass/mysass/_header.sass */
-header .header-box .rightBut:hover {
+/* line 49, ../sass/mysass/_header.sass */
+header .header-box nav .rightBut:hover {
   background-color: #62a2c8;
 }
-/* line 46, ../sass/mysass/_header.sass */
-header .header-box .rightBut img {
+/* line 51, ../sass/mysass/_header.sass */
+header .header-box nav .rightBut img {
   float: left;
   width: 14px;
   height: 14px;
   padding: 8px;
 }
-/* line 50, ../sass/mysass/_header.sass */
-header .header-box .rightBut p {
+/* line 55, ../sass/mysass/_header.sass */
+header .header-box nav .rightBut p {
   float: left;
   padding: 0 8px 0 0;
   text-align: center;
@@ -125,10 +134,22 @@ header .header-box .rightBut p {
   line-height: 30px;
 }
 
-/* line 57, ../sass/mysass/_header.sass */
+/* line 62, ../sass/mysass/_header.sass */
 .container {
   max-width: 960px;
-  margin: 50px auto auto auto;
+  margin: 50px auto 0 auto;
+}
+
+/* line 1, ../sass/mysass/news.sass */
+.news {
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+  margin-bottom: 10px;
+  background: pink;
+  background: url(/assets/image/news-ex.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 /* line 1, ../sass/mysass/_side.sass */
@@ -168,25 +189,25 @@ header .header-box .rightBut p {
   background-color: #f6f7f9;
 }
 
-/* line 25, ../sass/mysass/_side.sass */
+/* line 22, ../sass/mysass/_side.sass */
 .left {
   float: left;
   width: 160px;
 }
-/* line 28, ../sass/mysass/_side.sass */
+/* line 25, ../sass/mysass/_side.sass */
 .left .site-info {
   color: darkgrey;
   text-align: center;
   font-size: 85%;
   font-weight: 300;
 }
-/* line 33, ../sass/mysass/_side.sass */
+/* line 30, ../sass/mysass/_side.sass */
 .left .site-info a:hover {
   color: black;
   font-weight: normal;
 }
 
-/* line 36, ../sass/mysass/_side.sass */
+/* line 33, ../sass/mysass/_side.sass */
 .right {
   float: right;
   width: 180px;
@@ -280,4 +301,88 @@ header .header-box .rightBut p {
   max-height: 44px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 3, ../sass/mysass/_mobile.sass */
+  .menu-open {
+    right: 150px;
+  }
+  /* line 6, ../sass/mysass/_mobile.sass */
+  .menu-open header .header-box .logo {
+    display: none;
+  }
+  /* line 8, ../sass/mysass/_mobile.sass */
+  .menu-open header .header-box nav {
+    right: 0;
+  }
+
+  /* line 10, ../sass/mysass/_mobile.sass */
+  body {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+    transition: right 0.33s ease;
+  }
+  /* line 15, ../sass/mysass/_mobile.sass */
+  body header {
+    transition: right 0.33s ease;
+  }
+  /* line 18, ../sass/mysass/_mobile.sass */
+  body header .header-box .toggle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: url("/assets/image/nav-icon.png") center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /* line 22, ../sass/mysass/_mobile.sass */
+  body header .header-box .logo-buf {
+    display: none;
+  }
+  /* line 24, ../sass/mysass/_mobile.sass */
+  body header .header-box .search-box {
+    display: none;
+  }
+  /* line 26, ../sass/mysass/_mobile.sass */
+  body header .header-box nav {
+    margin: 0;
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    background: #333;
+    transition: right 0.33s ease;
+  }
+  /* line 32, ../sass/mysass/_mobile.sass */
+  body header .header-box nav .rightBut {
+    display: block;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+  }
+  /* line 38, ../sass/mysass/_mobile.sass */
+  body header .header-box nav .rightBut p {
+    float: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* line 44, ../sass/mysass/_mobile.sass */
+  .left, .right {
+    display: none;
+  }
+
+  /* line 46, ../sass/mysass/_mobile.sass */
+  .main-section {
+    margin: 0 5px;
+  }
 }

@@ -5,6 +5,7 @@
 
 header
   @include position(fixed, 0, 0, null, 0)
+  z-index: 1
   height: 30px
   padding: 5px
   background-color: #026AA7
@@ -36,24 +37,28 @@ header
     .logo
       @include size(auto, 20px)
       @include completeCenter()
-    .rightBut
-      @include size(auto, 30px)
-      @include headerItem()
+    .toggle
+      height: 0
+    nav
       float: right
-      margin-left: 10px
-      &:hover
-        background-color: #62a2c8
-      img
-        float: left
-        @include eqsize(14px)
-        padding: 8px
-      p
-        float: left
-        padding: 0 8px 0 0
-        text-align: center
-        margin: 0
-        line-height: 30px
+      .rightBut
+        @include size(auto, 30px)
+        @include headerItem()
+        display: inline-block
+        margin-left: 10px
+        &:hover
+          background-color: #62a2c8
+        img
+          float: left
+          @include eqsize(14px)
+          padding: 8px
+        p
+          float: left
+          padding: 0 8px 0 0
+          text-align: center
+          margin: 0
+          line-height: 30px
 
 .container
   max-width: 960px
-  margin: 50px auto auto auto
+  margin: 50px auto 0 auto
