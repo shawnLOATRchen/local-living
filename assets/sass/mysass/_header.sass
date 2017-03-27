@@ -22,13 +22,17 @@ header
       float: left
       padding: 1px 5px
       transition: width 0.2s ease-in-out
+      &::-webkit-input-placeholder
+        color: white
+      &:hover
+        background-color: #62a2c8
       &:focus
         background: white
         width: 185px
     .search-but
-      @include eqsize(20px)
+      @include eqsize(18px)
       float: left
-      padding: 5px 0 5px 10px
+      padding: 6px 0 6px 10px
     .logo
       @include size(auto, 20px)
       @include completeCenter()

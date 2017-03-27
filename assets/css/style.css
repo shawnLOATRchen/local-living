@@ -12,22 +12,22 @@ body {
 
 /* line 11, ../sass/_base.sass */
 a {
-  color: #0074D9;
+  color: inherit;
   text-decoration: none;
   outline: 0;
 }
-/* line 15, ../sass/_base.sass */
+/* line 16, ../sass/_base.sass */
 a:visited {
   color: inherit;
 }
 
-/* line 18, ../sass/_base.sass */
+/* line 19, ../sass/_base.sass */
 ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 22, ../sass/_base.sass */
+/* line 23, ../sass/_base.sass */
 img {
   width: 100%;
 }
@@ -67,18 +67,26 @@ header .header-box .search-box {
   transition: width 0.2s ease-in-out;
 }
 /* line 25, ../sass/mysass/_header.sass */
+header .header-box .search-box::-webkit-input-placeholder {
+  color: white;
+}
+/* line 27, ../sass/mysass/_header.sass */
+header .header-box .search-box:hover {
+  background-color: #62a2c8;
+}
+/* line 29, ../sass/mysass/_header.sass */
 header .header-box .search-box:focus {
   background: white;
   width: 185px;
 }
-/* line 28, ../sass/mysass/_header.sass */
-header .header-box .search-but {
-  width: 20px;
-  height: 20px;
-  float: left;
-  padding: 5px 0 5px 10px;
-}
 /* line 32, ../sass/mysass/_header.sass */
+header .header-box .search-but {
+  width: 18px;
+  height: 18px;
+  float: left;
+  padding: 6px 0 6px 10px;
+}
+/* line 36, ../sass/mysass/_header.sass */
 header .header-box .logo {
   width: auto;
   height: 20px;
@@ -87,7 +95,7 @@ header .header-box .logo {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 35, ../sass/mysass/_header.sass */
+/* line 39, ../sass/mysass/_header.sass */
 header .header-box .rightBut {
   width: auto;
   height: 30px;
@@ -97,18 +105,18 @@ header .header-box .rightBut {
   float: right;
   margin-left: 10px;
 }
-/* line 40, ../sass/mysass/_header.sass */
+/* line 44, ../sass/mysass/_header.sass */
 header .header-box .rightBut:hover {
   background-color: #62a2c8;
 }
-/* line 42, ../sass/mysass/_header.sass */
+/* line 46, ../sass/mysass/_header.sass */
 header .header-box .rightBut img {
   float: left;
   width: 14px;
   height: 14px;
   padding: 8px;
 }
-/* line 46, ../sass/mysass/_header.sass */
+/* line 50, ../sass/mysass/_header.sass */
 header .header-box .rightBut p {
   float: left;
   padding: 0 8px 0 0;
@@ -117,7 +125,7 @@ header .header-box .rightBut p {
   line-height: 30px;
 }
 
-/* line 53, ../sass/mysass/_header.sass */
+/* line 57, ../sass/mysass/_header.sass */
 .container {
   max-width: 960px;
   margin: 50px auto auto auto;
@@ -126,47 +134,150 @@ header .header-box .rightBut p {
 /* line 1, ../sass/mysass/_side.sass */
 .sideBox {
   background-color: white;
-  margin-bottom: 10px;
   border-radius: 3px;
   border: 1px solid lightgrey;
+  margin-bottom: 10px;
   text-align: center;
 }
-/* line 7, ../sass/mysass/_side.sass */
+/* line 5, ../sass/mysass/_side.sass */
 .sideBox ul {
   margin: 0;
 }
-/* line 9, ../sass/mysass/_side.sass */
+/* line 7, ../sass/mysass/_side.sass */
 .sideBox ul li {
   box-shadow: 0px 1px 0px 0px #e9ebee;
   padding: 4px 0;
   margin: 0 5px;
 }
+/* line 11, ../sass/mysass/_side.sass */
+.sideBox ul li:hover {
+  background-color: #e9ebee;
+}
 /* line 13, ../sass/mysass/_side.sass */
+.sideBox ul li:last-child {
+  box-shadow: none;
+}
+/* line 15, ../sass/mysass/_side.sass */
 .sideBox ul li:first-child {
   margin: 0;
   padding: 8px 0;
   background-color: #f6f7f9;
 }
-/* line 17, ../sass/mysass/_side.sass */
-.sideBox ul li:last-child {
-  box-shadow: none;
+/* line 19, ../sass/mysass/_side.sass */
+.sideBox ul li:first-child:hover {
+  background-color: #f6f7f9;
 }
 
-/* line 21, ../sass/mysass/_side.sass */
+/* line 25, ../sass/mysass/_side.sass */
 .left {
   float: left;
-  width: 190px;
+  width: 160px;
+}
+/* line 28, ../sass/mysass/_side.sass */
+.left .site-info {
+  color: darkgrey;
+  text-align: center;
+  font-size: 85%;
+  font-weight: 300;
+}
+/* line 33, ../sass/mysass/_side.sass */
+.left .site-info a:hover {
+  color: black;
+  font-weight: normal;
 }
 
-/* line 24, ../sass/mysass/_side.sass */
+/* line 36, ../sass/mysass/_side.sass */
 .right {
   float: right;
-  width: 220px;
+  width: 180px;
 }
 
 /* line 1, ../sass/mysass/_main.sass */
 .main-section {
-  background-color: skyblue;
-  margin: 0 230px auto 200px;
-  height: 800px;
+  margin: 0 190px auto 170px;
+}
+/* line 3, ../sass/mysass/_main.sass */
+.main-section .top-category {
+  margin-bottom: 10px;
+}
+/* line 5, ../sass/mysass/_main.sass */
+.main-section .top-category .top-name {
+  margin: 0;
+  padding: 8px;
+}
+/* line 8, ../sass/mysass/_main.sass */
+.main-section .top-category ul li {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  margin: 5px 0 5px 5px;
+  padding: 3px 7.5px;
+}
+/* line 13, ../sass/mysass/_main.sass */
+.main-section .top-category ul li:hover {
+  background-color: #e9ebee;
+}
+
+/* line 17, ../sass/mysass/_main.sass */
+.feed {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+}
+/* line 19, ../sass/mysass/_main.sass */
+.feed .feed-header {
+  margin: 0;
+  padding: 5px;
+  font-size: 110%;
+  box-shadow: 0px 1px 0px 0px #e9ebee;
+}
+/* line 24, ../sass/mysass/_main.sass */
+.feed .feed-cell {
+  display: block;
+  position: relative;
+  height: 80px;
+  padding: 5px 0;
+  margin: 0 5px;
+  box-shadow: 0px 1px 0px 0px #e9ebee;
+}
+/* line 31, ../sass/mysass/_main.sass */
+.feed .feed-cell:hover {
+  background-color: #e9ebee;
+}
+/* line 33, ../sass/mysass/_main.sass */
+.feed .feed-cell:last-child {
+  box-shadow: none;
+}
+/* line 35, ../sass/mysass/_main.sass */
+.feed .feed-cell img {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+/* line 38, ../sass/mysass/_main.sass */
+.feed .feed-cell .date {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 90%;
+}
+/* line 43, ../sass/mysass/_main.sass */
+.feed .feed-cell .title {
+  color: black;
+  margin: 5px 100px 8px 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 49, ../sass/mysass/_main.sass */
+.feed .feed-cell .content {
+  margin: 8px 10px 5px 90px;
+  font-size: 90%;
+  line-height: 22px;
+  max-height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
