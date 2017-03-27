@@ -40,4 +40,16 @@ header {
   height: 30px;
   padding: 5px;
   background-color: #026AA7;
+  position: relative;
+}
+/* line 6, ../sass/mysass/_header.sass */
+header .logo {
+  width: auto;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
