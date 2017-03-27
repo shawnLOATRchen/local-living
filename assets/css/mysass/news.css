@@ -1,0 +1,70 @@
+/*
+Error: Undefined mixin 'size'.
+        on line 2 of D:/ethan/Documents/GitHub/local-living/assets/sass/mysass/news.sass, in `size'
+        from line 2 of D:/ethan/Documents/GitHub/local-living/assets/sass/mysass/news.sass
+
+1: .news
+2:   @include size(100%, 0)
+3:   padding-bottom: 30%
+4:   margin-bottom: 10px
+5:   background: pink
+6:   background: url(/assets/image/news-ex.jpg)
+7:   background-position: center center
+
+Backtrace:
+D:/ethan/Documents/GitHub/local-living/assets/sass/mysass/news.sass:2:in `size'
+D:/ethan/Documents/GitHub/local-living/assets/sass/mysass/news.sass:2
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+D:/Program Files (x86)/Editing/Program Editing/Ruby/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'size'.\A         on line 2 of D:/ethan/Documents/GitHub/local-living/assets/sass/mysass/news.sass, in `size'\A         from line 2 of D:/ethan/Documents/GitHub/local-living/assets/sass/mysass/news.sass\A \A 1: .news\A 2:   @include size(100%, 0)\A 3:   padding-bottom: 30%\A 4:   margin-bottom: 10px\A 5:   background: pink\A 6:   background: url(/assets/image/news-ex.jpg)\A 7:   background-position: center center"; }
