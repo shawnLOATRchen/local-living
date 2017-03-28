@@ -9,11 +9,11 @@
   <body>
     <%- include indexSubViews/header-subpage.ejs %>
     <div class="container">
-      <form class="post-form" method="post">
-        <label><p>标题</p><input name="title" type="text" placeholder="请输入标题" required/></label>
-        <label><p>内容</p><textarea name="content" placeholder="请输入内容" required></textarea></label>
-        <input name="submit" type="submit" value="发布" />
-      </form>
+      <div class="success-box">
+        <p>发布成功!</p>
+        <a href="">查看信息</a>
+        <a href="/">返回主页</a>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/assets/js/fuc.js"></script>

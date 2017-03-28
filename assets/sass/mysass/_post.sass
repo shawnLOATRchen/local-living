@@ -1,4 +1,4 @@
-.post-form
+.post-form, .success-box
   @include mian-box()
   max-width: 414px
   background-color: white
@@ -9,6 +9,8 @@
   text-align: center
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
   font-size: 16px
+
+.post-form
   label
     display: block
     margin: 10px 0
@@ -38,3 +40,12 @@
     cursor: pointer
     &:hover
       background: #43A047
+.success-box
+  p
+    font-size: 20px
+  a
+    color: #0074D9
+    display: block
+    margin: 14px
+    &:hover
+      transform: scale(1.15)

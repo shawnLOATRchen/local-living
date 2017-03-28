@@ -134,7 +134,31 @@ header .header-box nav .rightBut p {
   line-height: 30px;
 }
 
-/* line 62, ../sass/mysass/_header.sass */
+/* line 61, ../sass/mysass/_header.sass */
+.back-to-index {
+  float: left;
+}
+/* line 63, ../sass/mysass/_header.sass */
+.back-to-index:hover {
+  color: #62a2c8;
+}
+/* line 65, ../sass/mysass/_header.sass */
+.back-to-index img {
+  float: left;
+  width: auto;
+  height: 14px;
+  padding: 8px 0;
+}
+/* line 69, ../sass/mysass/_header.sass */
+.back-to-index p {
+  float: left;
+  padding: 0 0 0 8px;
+  text-align: center;
+  margin: 0;
+  line-height: 30px;
+}
+
+/* line 75, ../sass/mysass/_header.sass */
 .container {
   max-width: 960px;
   margin: 50px auto 0 auto;
@@ -387,7 +411,7 @@ header .header-box nav .rightBut p {
   }
 }
 /* line 1, ../sass/mysass/_post.sass */
-.post-form {
+.post-form, .success-box {
   background-color: white;
   border-radius: 3px;
   border: 1px solid lightgrey;
@@ -401,20 +425,21 @@ header .header-box nav .rightBut p {
 }
 @media screen and (max-width: 414px) {
   /* line 1, ../sass/mysass/_post.sass */
-  .post-form {
+  .post-form, .success-box {
     margin: 0 10px;
   }
 }
-/* line 12, ../sass/mysass/_post.sass */
+
+/* line 14, ../sass/mysass/_post.sass */
 .post-form label {
   display: block;
   margin: 10px 0;
 }
-/* line 15, ../sass/mysass/_post.sass */
+/* line 17, ../sass/mysass/_post.sass */
 .post-form label p {
   margin: 0 0 10px 0;
 }
-/* line 17, ../sass/mysass/_post.sass */
+/* line 19, ../sass/mysass/_post.sass */
 .post-form input[type="text"], .post-form textarea {
   outline: 0;
   background: #f2f2f2;
@@ -424,15 +449,15 @@ header .header-box nav .rightBut p {
   padding: 15px;
   box-sizing: border-box;
 }
-/* line 25, ../sass/mysass/_post.sass */
+/* line 27, ../sass/mysass/_post.sass */
 .post-form input[type="text"] {
   height: 20px;
 }
-/* line 27, ../sass/mysass/_post.sass */
+/* line 29, ../sass/mysass/_post.sass */
 .post-form textarea {
   height: 200px;
 }
-/* line 29, ../sass/mysass/_post.sass */
+/* line 31, ../sass/mysass/_post.sass */
 .post-form input[type="submit"] {
   text-transform: uppercase;
   outline: 0;
@@ -444,7 +469,22 @@ header .header-box nav .rightBut p {
   transition: all 0.3 ease;
   cursor: pointer;
 }
-/* line 39, ../sass/mysass/_post.sass */
+/* line 41, ../sass/mysass/_post.sass */
 .post-form input[type="submit"]:hover {
   background: #43A047;
+}
+
+/* line 44, ../sass/mysass/_post.sass */
+.success-box p {
+  font-size: 20px;
+}
+/* line 46, ../sass/mysass/_post.sass */
+.success-box a {
+  color: #0074D9;
+  display: block;
+  margin: 14px;
+}
+/* line 50, ../sass/mysass/_post.sass */
+.success-box a:hover {
+  transform: scale(1.15);
 }

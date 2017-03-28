@@ -2,6 +2,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 // connect to the database
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://myself:5525231@ds133438.mlab.com:33438/mydb');
 
 // create a schema - this is like a blueprint
@@ -23,9 +24,13 @@ module.exports = function(app){
       res.render('index', {feedCells:data});
     });
   });
+
   // render post page
   app.get('/post', function(req, res){
     res.render('post');
+  });
+  app.get('/post-success', function(req, res){
+    res.render('post-success');
   });
 
   // get post data and upload to mongodb
